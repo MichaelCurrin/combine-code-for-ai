@@ -3,9 +3,16 @@
 
 With structure at the start followed by all files together.
 
-Only macOS/Linux are supported.
+_Only macOS/Linux are supported_.
 
-## Installion
+## Why use this tool
+
+- Run locally without giving your (possibly private) repo to a website.
+- Modify the output before uploading it to an LLM service if needed.
+- Open source code so you can inspect what's going on an modify how the tool works.
+
+
+## Installation
 
 ```sh
 git clone https://github.com/MichaelCurrin/combine-code-for-ai.git
@@ -42,11 +49,12 @@ CONTENT: <|START_CONTENT|>
 <|END_CONTENT|>
 ```
 
-## Based on
+## Inspiration
 
-Reddit thread https://www.reddit.com/r/LocalLLaMA/comments/1hdvtxj/your_source_to_prompt_turn_your_code_into_an_llm/?rdt=54180
+Based on:
 
-Locally running option with a GUI: https://github.com/Dicklesworthstone/your-source-to-prompt.html/tree/main?tab=readme-ov-file
+- Reddit thread: https://www.reddit.com/r/LocalLLaMA/comments/1hdvtxj/your_source_to_prompt_turn_your_code_into_an_llm/?rdt=54180
+- Locally running option with a GUI: https://github.com/Dicklesworthstone/your-source-to-prompt.html/tree/main?tab=readme-ov-file
 
 ## License
 
