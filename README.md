@@ -3,6 +3,15 @@
 
 With structure at the start followed by all files together.
 
+Only macOS/Linux are supported.
+
+## Installion
+
+```sh
+git clone https://github.com/MichaelCurrin/combine-code-for-ai.git
+cd combine-code-for-ai
+```
+
 ## Usage
 
 ```sh
