@@ -1,5 +1,5 @@
-# Combine text
-> Convert a repo of files into a LLM-friendly output
+# Combine text for AI
+> Convert a repo of files into a LLM-friendly output.
 
 With structure at the start followed by all files together.
 
