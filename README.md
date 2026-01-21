@@ -1,5 +1,5 @@
 # Combine text for AI
-> Convert a repo of files into a LLM-friendly output.
+> Convert a repo of files into a LLM-friendly output, respecting `.gitignore`
 
 With structure at the start followed by all files together.
 
