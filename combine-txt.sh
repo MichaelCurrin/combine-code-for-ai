@@ -30,7 +30,12 @@ if [[ -n "$2" ]]; then
   esac
 fi
 
+# Structure
+
+echo 'Directory structure:'
 (cd "$TARGET" && tree . --gitignore --noreport)
+
+# Content
 
 INPUT_FILES=$(git -C "$TARGET" ls-files | while read FILE; do
   MIME_TYPE=$(file -b --mime "$TARGET/$FILE")
@@ -40,6 +45,9 @@ INPUT_FILES=$(git -C "$TARGET" ls-files | while read FILE; do
 done)
 
 TEXT_FILES_ARRAY=($(echo "$INPUT_FILES" | tr '\n' ' '))
+
+echo
+echo "Files analized: ${#TEXT_FILES_ARRAY[@]}"
 
 OUTPUT=""
 for FILE_PATH in "${TEXT_FILES_ARRAY[@]}"; do
@@ -53,13 +61,14 @@ for FILE_PATH in "${TEXT_FILES_ARRAY[@]}"; do
     OUTPUT+="$(
       cat <<-END_OUTPUT
 
-FILENAME: $RELATIVE_PATH
-CONTENT: <|START_CONTENT|>
+================================================
+FILE: $RELATIVE_PATH
+================================================
+
 $CONTENT
-<|END_CONTENT|>
 
 END_OUTPUT
-    )
+)
 "
   fi
 done
