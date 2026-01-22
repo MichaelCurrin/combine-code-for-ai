@@ -1,5 +1,5 @@
 # Combine code for AI
-> Convert a repo of files into a LLM-friendly output, respecting `.gitignore`
+> Convert a repo of code into single LLM-friendly text, respecting `.gitignore`
 
 With structure at the start followed by all files together.
 
@@ -49,12 +49,11 @@ CONTENT: <|START_CONTENT|>
 <|END_CONTENT|>
 ```
 
-## Inspiration
-
-Based on:
+## Related tools
 
 - Reddit thread: https://www.reddit.com/r/LocalLLaMA/comments/1hdvtxj/your_source_to_prompt_turn_your_code_into_an_llm/?rdt=54180
 - Locally running option with a GUI: https://github.com/Dicklesworthstone/your-source-to-prompt.html/tree/main?tab=readme-ov-file
+- Git Ingest: https://gitingest.com/
 
 ## License
 
