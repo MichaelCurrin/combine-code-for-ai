@@ -1,0 +1,4 @@
+TODO check target exists and is dir.
+TODO count total lines and chars and tokens
+TODO sort output so tree and file output matches order.
+TODO Option to give a URL and download
