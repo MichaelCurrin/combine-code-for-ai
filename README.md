@@ -36,17 +36,21 @@ Add `--min` flag to preview with just 10 lines for each file.
 ...
 └── README.md
 
-FILENAME: file1.txt
-CONTENT: <|START_CONTENT|>
-...
-<|END_CONTENT|>
+Files analized: 11
+
+================================================
+FILE: file1.txt
+================================================
+
+Contents of file.
 
 ...
 
-FILENAME: README.md
-CONTENT: <|START_CONTENT|>
-...
-<|END_CONTENT|>
+================================================
+FILE: README.md
+================================================
+
+Contents of file.
 ```
 
 ## Related tools
